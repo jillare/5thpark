@@ -1,0 +1,451 @@
+/* フォントファイル読み込みのための記述 */
+/* @font-face {
+  font-family: "main-font";
+  src: url("./fonts/file-name.woff") format("woff");
+} */
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+li {
+  list-style: none;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.section2 {
+  width: 100vw;
+  height: 220vh;
+}
+
+header {
+  width: 100vw;
+  height: 20vh;
+  background-color: rgb(0, 168, 166);
+}
+
+footer {
+  width: 100vw;
+  height: 5vh;
+  background-color: rgb(0, 168, 166);
+}
+
+.top {
+  gap: 0px 80px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  padding: 40px 30px;
+}
+
+.top > .left {
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0px;
+}
+.top > .leftunder {
+  display: flex;
+  gap: 0px 50px;
+}
+
+.image-mock {
+  display: flex;
+  gap: 0px 40px;
+}
+
+.aikon {
+  /*width: 200px;*/
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.aikonbig {
+  width: 60%;
+}
+
+.sab {
+  gap: 30px 0px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  align-content: space-between;
+  font-size: 30px; /*サイズ2倍*/
+}
+
+.memos {
+  width: 100%;
+  display: flex;
+  justify-content: space-around; /*水平方向中央揃え*/
+}
+.memos > .memosleft {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*.memos > .memosright {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}*/
+
+.memo1 {
+  width: 506px;
+  height: 614px;
+
+  position: relative;
+}
+
+.memo1 p {
+  font-family: "Noto Sans JP", sans-serif;
+  position: absolute; /*絶対配置*/
+  top: 50%;
+  left: 50%;
+  white-space: nowrap; /*一行に収める*/
+  font-weight: medium; /*太字に*/
+  font-size: 40px; /*サイズ2倍*/
+  text-align: center;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
+}
+
+.memo1 img {
+  position: absolute;
+  width: 506px;
+  height: 614px;
+}
+
+.memo2 {
+  width: 506px;
+  height: 614px;
+  margin-top: 150px;
+  position: relative;
+}
+
+.memo2 p {
+  position: absolute; /*絶対配置*/
+  top: 50%;
+  left: 50%;
+  white-space: nowrap; /*一行に収める*/
+  font-weight: medium; /*太字に*/
+  font-size: 40px; /*サイズ2倍*/
+  text-align: center;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
+}
+.memo2 img {
+  position: absolute;
+  width: 506px;
+  height: 614px;
+}
+
+.memo3 {
+  width: 506px;
+  height: 614px;
+  margin-top: 159px;
+  position: relative;
+}
+
+.memo3 p {
+  position: absolute; /*絶対配置*/
+  top: 50%;
+  left: 50%;
+  white-space: nowrap; /*一行に収める*/
+  font-weight: medium; /*太字に*/
+  font-size: 40px; /*サイズ2倍*/
+  text-align: center;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
+}
+.memo3 img {
+  position: absolute;
+  width: 506px;
+  height: 614px;
+}
+
+.memo4 {
+  width: 506px;
+  height: 614px;
+  margin-top: 150px;
+  position: relative;
+  filter: drop-shadow(50px, 50px, 50px, rgb(0, 168, 166));
+}
+
+.memo4 p {
+  position: absolute; /*絶対配置*/
+  top: 50%;
+  left: 50%;
+  white-space: nowrap; /*一行に収める*/
+  font-weight: medium; /*太字に*/
+  font-size: 40px; /*サイズ2倍*/
+  text-align: center;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
+}
+.memo4 img {
+  position: absolute;
+  width: 506px;
+  height: 614px;
+}
+
+.howtouse-1 {
+  width: 100%;
+  display: flex;
+  justify-content: center; /*水平方向中央揃え*/
+  align-items: center; /*垂直方向中央揃え*/
+}
+.howtouse-1 > .left {
+  margin-right: 104px;
+  flex-shrink: 1; /*他の子要素に比べて縮む割合*/
+  display: flex;
+  flex-direction: column; /*子要素を上から下に配置*/
+  align-content: space-between;
+}
+
+.sticky1 {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center; /*水平方向中央揃え*/
+  align-items: center; /*垂直方向中央揃え*/
+  padding: 40px 30px; /*ボックス内の余白*/
+}
+
+.sticky1 p {
+  color: #fff;
+  font-weight: bold; /*太字に*/
+  font-size: 42px; /*サイズ2倍*/
+  text-align: center; /*段落中央ぞろえ*/
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  z-index: 1; /*一番前に*/
+}
+
+.sticky1 img {
+  position: absolute;
+  width: 120%;
+  height: 140%;
+}
+
+.sticky1-description {
+  margin-top: 40px;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.howtouse-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.howtouse-2 > .left {
+  margin-left: 104px;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sticky2-description {
+  margin-top: 40px;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.image1 {
+  width: 280px;
+  display: flex; /* flexbox */
+  gap: 0px 50px;
+}
+
+.image2 {
+  width: 280px;
+  display: flex; /* flexbox */
+  gap: 0px 50px;
+}
+
+/*ul {
+  display: flex;
+  width: 100%;
+}*/
+
+.image3 {
+  width: 300px;
+  height: auto;
+}
+
+.image4 {
+  width: 300px;
+  height: auto;
+}
+
+.sticky2 {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 30px;
+}
+
+.sticky2 p {
+  color: #fff;
+  font-weight: bold; /*太字に*/
+  font-size: 42px; /*サイズ2倍*/
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.sticky2 img {
+  position: absolute;
+  width: 130%;
+  height: 130%;
+}
+
+.memoshadow {
+  filter: drop-shadow(50px, 50px, 50px, rgb(0, 168, 166));
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/*html, body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #3cad7e;
+  font-family: "Arial", sans-serif;
+}*/
+
+/*テキストボックス*/
+.cp_iptxt {
+  gap: 0px 10px;
+  display: flex;
+  position: relative;
+  width: 15%;
+  margin: 30px 3%;
+}
+.cp_iptxt input[type="text"] {
+  font: 15px/24px sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 300px;
+  padding: 0.5em; /*文字と枠の間の空白*/
+  transition: 0.3s;
+  letter-spacing: 1px;
+  color: black;
+  border: 1px solid #1b2538;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+}
+.ef input[type="text"]:focus {
+  border: 1px solid rgb(0, 168, 166);
+  outline: none;
+  box-shadow: 0 0 5px 1px rgb(0, 168, 166);
+}
+
+/*ボタン*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.btn,
+a.btn,
+button.btn {
+  width: 100%;
+  min-width: 200px;
+  height: 100%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+.btn--orange,
+a.btn--orange {
+  color: #fff;
+  background-color: rgb(0, 168, 166);
+}
+
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: rgb(0, 168, 166);
+}
+
+a.btn--orange.btn--border-solid {
+  border: 2px solid rgb(17, 75, 75);
+}
+
+/*アニメーション*/
+
+.wrapper {
+  overflow: hidden;
+}
+
+.fadeUp {
+  transition: all 1s;
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.fadeUp.active {
+  transform: translateY(0px); /*縦の移動方向*/
+  opacity: 1;
+}
+
+.nakayoshi {
+  display: flex;
+  color: #fff;
+  justify-content: center;
+}
